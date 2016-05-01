@@ -4,6 +4,9 @@ var EmberApp = require('ember-cli/lib/broccoli/ember-app');
 
 module.exports = function(defaults) {
   var app = new EmberApp(defaults, {
+    pure: {
+      modules: ['grids', 'grids-responsive', 'menus', 'forms']
+    }
     // Add options here
   });
 
