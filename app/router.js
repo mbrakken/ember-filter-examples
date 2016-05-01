@@ -6,6 +6,9 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.route('filtered-array');
+  this.route('hidden-elements');
+  this.route('subset');
 });
 
 export default Router;
