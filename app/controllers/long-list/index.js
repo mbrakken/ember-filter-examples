@@ -2,11 +2,8 @@ import Ember from 'ember';
 
 const { Controller,
         computed,
-        observer,
         get,
-        set,
-        inject,
-        run } = Ember;
+        inject } = Ember;
 
 export default Controller.extend({
 
