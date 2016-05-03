@@ -1,6 +1,10 @@
 import Ember from 'ember';
+import MusicatAlbum from '../models/musicat-album';
 
-const { Route, get, set, inject } = Ember;
+const { Route,
+        get,
+        set,
+        inject } = Ember;
 
 export default Route.extend({
 
@@ -12,13 +16,12 @@ export default Route.extend({
     return get(this, 'ajax').request(url)
       .then(response => {
         return response.map(item => {
-          return item.album;
+          return MusicatAlbum.create(item.album);
         }).sortBy('main_artist_name', 'title');
       });
   },
 
   setupController(controller, model){
-    this._super(...arguments);
     set(controller, 'albums', model);
   }
 
