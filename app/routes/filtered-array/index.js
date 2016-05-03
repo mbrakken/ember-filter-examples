@@ -6,7 +6,7 @@ const { Route,
 export default Route.extend({
 
   model(){
-    return this.modelFor('long-list');
+    return this.modelFor('filtered-array');
   },
 
   setupController(controller, albums){

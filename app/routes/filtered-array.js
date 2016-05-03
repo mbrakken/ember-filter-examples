@@ -3,7 +3,6 @@ import MusicatAlbum from '../models/musicat-album';
 
 const { Route,
         get,
-        set,
         inject } = Ember;
 
 export default Route.extend({
@@ -19,10 +18,6 @@ export default Route.extend({
           return MusicatAlbum.create(item.album);
         }).sortBy('main_artist_name', 'title');
       });
-  },
-
-  setupController(controller, model){
-    set(controller, 'albums', model);
   }
 
 });

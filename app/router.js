@@ -6,7 +6,9 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  this.route('filtered-array');
+  this.route('filtered-array', function() {
+    this.route('album', { path: '/:slug' });
+  });
   this.route('hidden-elements');
   this.route('subset');
   this.route('long-list', function() {
