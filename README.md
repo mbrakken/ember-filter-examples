@@ -1,6 +1,6 @@
-# Filter-examples
+# Filter examples
 
-Demonstrating a few approaches to filtering long lists of objects stored locally.
+Demonstrates a few approaches to filtering long lists of objects stored locally, using Ember 2.5.x
 
 ## Prerequisites
 
