@@ -9,6 +9,9 @@ Router.map(function() {
   this.route('filtered-array');
   this.route('hidden-elements');
   this.route('subset');
+  this.route('long-list', function() {
+    this.route('album', { path: '/:slug' });
+  });
 });
 
 export default Router;
