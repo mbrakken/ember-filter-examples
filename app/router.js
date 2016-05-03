@@ -10,7 +10,6 @@ Router.map(function() {
     this.route('album', { path: '/:slug' });
   });
   this.route('hidden-elements');
-  this.route('subset');
   this.route('long-list', function() {
     this.route('album', { path: '/:slug' });
   });

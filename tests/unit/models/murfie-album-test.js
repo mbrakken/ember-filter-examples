@@ -1,6 +1,6 @@
-import { moduleForModel, test } from 'ember-qunit';
+import { moduleFor, test } from 'ember-qunit';
 
-moduleForModel('murfie-album', 'Unit | Model | murfie album', {
+moduleFor('model:murfie-album', 'Unit | murfie album', {
   // Specify the other units that are required for this test.
   needs: []
 });
