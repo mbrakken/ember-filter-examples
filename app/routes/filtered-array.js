@@ -13,7 +13,7 @@ export default Route.extend({
       .then(response => {
         return response.map(item => {
           return item.album;
-        });
+        }).sortBy('main_artist_name', 'title');
       });
   },
 
